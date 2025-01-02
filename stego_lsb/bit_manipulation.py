@@ -26,6 +26,12 @@ from time import time
 from typing import List
 
 import numpy as np
+from typing import Iterable, Union
+
+# Ensure the value is converted or filtered to match the expected type
+value: Union[int, list[int], list[list[int]], list[list[list[Any]]]] = ...
+result: Iterable[unsignedinteger[_8Bit]] = cast_to_appropriate_type(value)
+
 
 
 def roundup(x: float, base: int = 1) -> int:
